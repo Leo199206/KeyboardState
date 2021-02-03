@@ -55,9 +55,9 @@ dependencies {
 
 //上传到Maven库配置
 def siteUrl = 'https://github.com/jlertele'
-def gitUrl = 'https://github.com/jlertele/SwitchButton.git'
-def issuesUrl = 'https://github.com/jlertele/SwitchButton/issues'
-group = "com.jlertele.widget"
+def gitUrl = 'https://github.com/jlertele/KeyboardState.git'
+def issuesUrl = 'https://github.com/jlertele/KeyboardState/issues'
+group = "com.jlertele.keyboard"
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -65,7 +65,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'Android && iOS Switch Button Library'    //项目描述
+                name 'KeyboardState Listener Library'    //项目描述
                 url siteUrl
                 // Set your license
                 licenses {
@@ -132,7 +132,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "SwitchButton"    //发布到JCenter上的项目名字
+        name = "KeyboardState"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
