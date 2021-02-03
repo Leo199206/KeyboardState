@@ -11,12 +11,14 @@
         android:id="@+id/ed_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="点击输入弹窗键盘"
         android:padding="20dp" />
 
     <TextView
         android:id="@+id/tv_state"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="键盘关闭"
         android:padding="20dp" />
 
 </LinearLayout>
