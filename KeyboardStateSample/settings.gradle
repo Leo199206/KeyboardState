@@ -1,0 +1,4 @@
+include ':KeyboardState'
+include ':app'
+
+rootProject.name = "KeyboardStateSample"
