@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.jlertele.keyboard.KeyboardStateListener
 import com.jlertele.keyboard.addKeyboardListener
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity(), KeyboardStateListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity(), KeyboardStateListener {
      * @param keyboardHeight Int
      */
     override fun onKeyboardShow(keyboardHeight: Int) {
-        tv_state.text = "键盘展开"
+        tv_state.text = "键盘展开:${keyboardHeight}"
     }
 
     /**
@@ -26,6 +27,6 @@ class MainActivity : AppCompatActivity(), KeyboardStateListener {
      * @param keyboardHeight Int
      */
     override fun onKeyboardHide(keyboardHeight: Int) {
-        tv_state.text = "键盘关闭"
+        tv_state.text = "键盘关闭:${keyboardHeight}"
     }
 }
